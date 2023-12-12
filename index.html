@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel ="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body background="bg.png">
+<div class="topnav">
+    <a class="active" href="#home">HOME</a>
+    <a href="/MENU/menu.html">MENU</a>
+    <a href="/BRANCHES/branches.html">BRANCHES</a>
+    <a href="/RESERVATION/reservation.html">RESERVATION</a>
+    <a href="/CONTACT/contact.html">CONTACT</a>
+</div>
+<div class="main">
+<div class="tag">
+<h1 id="h1tag">
+    The Sushi Social
+</h1>
+<h2 id="h2tag">
+    SUSHI SHARED, STORIES TOLD
+</h2>
+</div>
+<div class="picture">
+<img src="sushi.png" width=1500vw">
+</div>
+</div>
+<div class="about">
+    <center>
+        <div class="abouttitle">
+        ABOUT US
+        </div>
+        <div class="description">
+            Welcome to The Sushi Social, nestled in the heart of BGC Makati. We are more than just a sushi restaurant; we are a celebration of the art of sushi making, a gathering place for sushi lovers, and a hub for those who appreciate authentic Japanese cuisine. Our master chefs meticulously craft each roll using the freshest ingredients, creating an unforgettable culinary experience with every bite. At The Sushi Social, we believe that sushi is not just food, but a lifestyle. Join us and become part of our vibrant sushi community. We can’t wait to serve you!
+        </div>
+    </center>
+        <div class="photos">
+            <img class="mySlides w3-animate-fading" src="1.png">
+            <img class="mySlides w3-animate-fading" src="2.png">
+            <img class="mySlides w3-animate-fading" src="3.png">
+            <img class="mySlides w3-animate-fading" src="4.png">
+        </div>
+</div>
+</div>
+<script>
+    var slideIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sushi Social</title>
+</head>
+
+<style>
+    *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222;
+}
+.single-menu img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+.main {
+    width: 1500px;
+    margin: 80px auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title h4 {
+    text-transform: capitalize;
+    font-size: 35px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 19px;
+    margin-bottom: 10px;
+}
+
+.section-title h4:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: red;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.menus {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.menu-column h4 {
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.menu-column h4:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: red;
+    bottom: 0;
+}
+.single-menu {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+}
+.single-menu img {
+    border-radius: 50%;
+    max-width: 120px;
+    max-height: 110px;
+    border: 1px dashed #ddd;
+    padding: 3px;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+.single-menu:hover img {
+    transform: rotate(360deg);
+}
+
+.single-menu .menu-content h5 {
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 1px dashed #222;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+span {
+    color: tomato;
+    font-weight: 600;
+    font-style: italic;
+   
+}
+
+p {
+    color: gray;
+}
+
+body {
+    background: url('https://th.bing.com/th/id/R.ace492c619bbfb057b7d595fc77887d8?rik=9OhC8oKdFu%2b9zA&riu=http%3a%2f%2ffc04.deviantart.net%2ffs42%2ff%2f2009%2f100%2f4%2fe%2fMSPaint_BG_yellow_orange_by_Lord_Hayati.png&ehk=LHjKOTtIePuIOkgudp5Z7lbE%2biangROfoEiq1jF4bHs%3d&risl=&pid=ImgRaw&r=0') no-repeat center center fixed;
+    background-size: cover;
+}
+.topnav {
+    display: flex;
+    width: 100%;
+    background-color: hsl(36, 100%, 50%);
+    overflow: hidden;
+    margin-left: -8px;
+    font-family: 'Montserrat';
+    
+  }
+
+  .topnav a {
+    flex: 1;
+    float: left;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 18%;
+    text-align: center; 
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #c73f3f;
+    color: white;
+  }
+
+</style>
+
+<body>
+    <div class="topnav">
+        <a href="/index.html">HOME</a>
+        <a class="active">MENU</a>
+        <a href="/BRANCHES/branches.html">BRANCHES</a>
+        <a href="/RESERVATION/reservation.html">RESERVATION</a>
+        <a href="/CONTACT/contact.html">CONTACT</a>
+    </div>
+    <div class="main">
+        <div class="section-title">
+            <h4>THE SUSHI SOCIAL</h4>
+        </div>
+        <div class="menus">
+            <div class="menu-column">
+                <h4>APPETIZER</h4>
+                <div class="single-menu">
+                    <img src="https://assets.bonappetit.com/photos/57acf97053e63daf11a4dc1d/4:3/w_1550,h_1162,c_limit/blistered-edamame.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>EDAMAME <span>Php120</span></h5>
+                        <p>early-harvested soybeans</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://www.gimmesomeoven.com/wp-content/uploads/2016/01/Miso-Soup-Recipe-9.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>MISO SOUP <span>Php90</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://www.justonecookbook.com/wp-content/uploads/2022/06/Agedashi-Tofu-8416-I-2.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>AGEDAISHI TOFU <span>Php180</span></h5>
+                        <p>fried tofu in daishi sauce</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://assets.epicurious.com/photos/628ba0d3fa016bab2139efa2/1:1/w_4546,h_4546,c_limit/Gyoza_RECIPE_051922_34332.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>GYOZA <span>Php160</span></h5>
+                        <p>pork or vegetable dumpling</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://mamaloli.com/wp-content/uploads/2011/12/takoyaki-14.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>TAKOYAKI <span>Php200</span></h5>
+                        <p>octopus balls</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="menu-column">
+                <h4>ROLLS</h4>
+                <div class="single-menu">
+                    <img src="https://simmerandsage.com/wp-content/uploads/2023/09/Crunchy-California-Roll1.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>CALIFORNIA ROLL <span>Php280</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://www.tiger-corporation.com/wp-content/uploads/2023/02/hero-img-recipe-spicy-tuna-3db6e125056f2bde01321a3da5d290da.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>SPICY TUNA ROLL <span>Php300</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2021/09/31555_salmon_avocado_maki.png" alt="">
+                    <div class="menu-content">
+                        <h5>SALMON AVOCADO ROLL <span>Php320</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://www.foodandwine.com/thmb/5m0L19cELC8zqZQGrcfhCTNY5jY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Dragon-Roll-FT-RECIPE0223-5e3d0283beee4921980ad7b5597d85a9.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>DRAGON ROLL <span>Php380</span></h5>
+                        <p>avocado, unagi, and tempura</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://norecipes.com/wp-content/uploads/2022/02/shrimp-tempura-roll-004.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>TEMPURA ROLL <span>Php350</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="menu-column">
+                <h4>SASHIMI</h4>
+                <div class="single-menu">
+                    <img src="https://blog.japanwondertravel.com/wp-content/uploads/2022/08/Assorted-sashimi.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>ASSORTED SASHIMI <span>Php480</span></h5>
+                        <p>chef's collection</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://ocwildseafood.com/cdn/shop/articles/Ahi_Tuna_Sashimi_Seafood_Recipe_1024x.jpg?v=1591853624" alt="">
+                    <div class="menu-content">
+                        <h5>TUNA SASHIMI <span>Php380</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://sudachirecipes.com/wp-content/uploads/2023/04/salmonsashimi2-sq.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>SALMON SASHIMI <span>Php400</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://honest-food.net/wp-content/uploads/2022/08/hamachi-sashimi-recipe.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>YELLOWTAIL SASHIMI <span>Php420</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="main">
+        <div class="menus">
+            <div class="menu-column">
+                <h4>NIGIRI</h4>
+                <div class="single-menu">
+                    <img src="https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,h_600,q_auto,w_800/f_auto/v1/recipes/DSCF1815_6196b773aa087" alt="">
+                    <div class="menu-content">
+                        <h5>TUNA NIGIRI <span>Php250</span></h5>
+                        <p>2pcs</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://www.tasteatlas.com/images/dishes/6f217822d9944dc59f270d3eacd25da7.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>EBI (SHRIMP) NIGIRI <span>Php220</span></h5>
+                        <p>2pcs</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://aisforappleau.com/wp-content/uploads/2023/07/how-to-make-sushi-salmon-nigiri-6.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>SALMON NIGIRI <span>Php270</span></h5>
+                        <p>2pcs</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://recipes.net/wp-content/uploads/2022/06/tamagoyaki-min-scaled.jpeg" alt="">
+                    <div class="menu-content">
+                        <h5>TAMAGO (EGG) NIGIRI <span>Php200</span></h5>
+                        <p>2pcs</p>
+                    </div>
+                </div>
+               
+               
+            </div>
+            <div class="menu-column">
+                <h4>BEVERAGES</h4>
+                <div class="single-menu">
+                    <img src="https://static.toiimg.com/thumb/msid-66970777,width-1280,resizemode-4/66970777.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>GREEN TEA <span>Php80</span></h5>
+                        <p>hot or cold</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2023/09/ETNT-best-worst-Soda.jpg?quality=82&strip=1" alt="">
+                    <div class="menu-content">
+                        <h5>SODA <span>Php100</span></h5>
+                        <p>Coke, Sprite, Root Beer</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://www.eatingwell.com/thmb/cnZ8M861ZSGj5DRe652o3h0Lfnk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-sake-be83ad8997e94a21af28b48d3f27e298.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>SAKE <span>Php350</span></h5>
+                        <p>by the glass</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://thumbs.dreamstime.com/b/bottles-famous-global-beer-brands-poznan-pol-mar-including-heineken-becks-bud-miller-corona-stella-artois-san-miguel-143170474.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>BEER <span>Php180-250</span></h5>
+                        <p>local and imported</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/index-japanese-whisky-1671125862.jpg?crop=0.5xw:1xh;center,top&resize=1200:*" alt="">
+                    <div class="menu-content">
+                        <h5> JAPANESE WHISKY <span>Php300</span></h5>
+                        <p>per shot</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="menu-column">
+                <h4>DESSERTS</h4>
+                <div class="single-menu">
+                    <img src="https://www.justonecookbook.com/wp-content/uploads/2020/08/Mochi-Ice-Cream-8680-I.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>MOCHI ICE CREAM <span>Php180</span></h5>
+                        <p>assorted flavors</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://www.rotinrice.com/wp-content/uploads/2011/08/MatchaIceCream-1.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>MATCHA CHEESECAKE <span>Php220</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://www.indulgewithmimi.com/wp-content/uploads/2020/05/matcha-cake-roll-red-bean-cream-1-720x720.jpg" alt="">
+                    <div class="menu-content">
+                        <h5>JAPANESE MATCHA ROLL <span>Php250</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+</body>
+</html>
