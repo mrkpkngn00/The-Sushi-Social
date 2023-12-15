@@ -9,12 +9,6 @@ body {
     height: 100vh; 
 }
 
-.logo {
-    width: 100%;
-    background-color: hsl(36, 100%, 50%);
-  }
-
-
 .topnav {
   display: flex;
   width: 100%;
@@ -22,8 +16,12 @@ body {
   overflow: hidden;
     margin-top:-10px;
   font-family: 'Montserrat';
-  
 }
+
+.logo {
+    width: 100%;
+    background-color: hsl(36, 100%, 50%);
+  }
 
 .topnav a {
   flex: 1;
